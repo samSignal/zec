@@ -1,14 +1,15 @@
 FROM php:8.2-apache
 
-# Install PostgreSQL driver for PHP
+# Install build dependencies and PostgreSQL driver
 RUN apt-get update \
   && apt-get install -y libpq-dev \
-  && docker-php-ext-install pdo pdo_pgsql
+  && docker-php-ext-install pdo pdo_pgsql pgsql \
+  && rm -rf /var/lib/apt/lists/*
 
-# Enable Apache mod_rewrite (if needed)
+# Optionally enable mod_rewrite and set doc root
 RUN a2enmod rewrite
 
-# Copy your app files into the web directory
+# Copy application files
 COPY . /var/www/html/
 
 EXPOSE 80
