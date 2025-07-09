@@ -42,12 +42,12 @@
 <body>
   <div class="body-inner">
 
-    <div id="top-bar" class="top-bar">
+    <div id="top-bar" class="top-bar" style="background-color: #1A202C; color: #fff;">
         <div class="container">
           <div class="row">
               <div class="col-lg-8 col-md-8">
                 <ul class="top-info text-center text-md-left">
-                    <li><i class="fas fa-map-marker-alt"></i> <p class="info-text">2/46 Khongo Block, Mpopoma, Bulawayo</p>
+                    <li><i class="fas fa-map-marker-alt" style="color: #ff0000;"></i> <p class="info-text" style="color: #fff;">2/46 Khongo Block, Mpopoma, Bulawayo</p>
                     </li>
                 </ul>
               </div>
@@ -56,13 +56,13 @@
               <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
                 <ul class="list-unstyled">
                     <li>
-                      <a title="Facebook" href="#">
+                      <a title="Facebook" href="#" style="color: #3b5998;">
                           <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
                       </a>
-                      <a title="Twitter" href="#">
+                      <a title="Twitter" href="#" style="color: #1DA1F2;">
                           <span class="social-icon"><i class="fab fa-twitter"></i></span>
                       </a>
-                      <a title="Instagram" href="#">
+                      <a title="Instagram" href="#" style="color: #e1306c;">
                           <span class="social-icon"><i class="fab fa-instagram"></i></span>
                       </a>
                     </li>
@@ -76,102 +76,63 @@
     </div>
     <!--/ Topbar end -->
 <!-- Header start -->
-<header id="header" class="header-one">
-  <div class="bg-white">
-    <div class="container">
-      <div class="logo-area">
-          <div class="row align-items-center">
-            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
-              <a class="d-block" href="index.php">
-                <img src="images/logo.png?v=1" alt="Mabecarestore" style="vertical-align: middle; height: 40px;">
-                <span style="color: #000; vertical-align: middle; font-size: 15px; line-height: 40px; display: inline-block;">
-                  <span style="color: #000;"> Mabecarestore </span><span style="color: #FFB600;"> Construction</span>
-                </span>
-              </a>
-            </div><!-- logo end -->
-  
-            <div class="col-lg-9 header-right">
-                <ul class="top-info-box">
-                  <li>
-                    <div class="info-box">
-                      <div class="info-box-content">
-                          <p class="info-box-title">Call Us</p>
-                          <p class="info-box-subtitle">+263 782 612 644</p>
-                      </div>
+<header id="header" class="header-one" style="background-color: #FF5733;">
+      
+      <div class="site-navigation" style="background-color: #222;">
+        <div class="container">
+            <div class="row align-items-center">
+              <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                <a class="d-block" href="index.php">
+                  <img src="images/logo.png?v=1" alt="Mabecarestore" style="vertical-align: middle; height: 50px;">
+                </a>
+              </div><!-- logo end -->
+              <div class="col-lg-9">
+                  <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div id="navbar-collapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav mr-auto">
+                            <?php
+                            $pages = array(
+                                'index.php' => 'Home',
+                                'about.php' => 'About US',
+                                'services.php' => 'Services', 
+                                'projects.php' => 'Projects',
+                                'contact.php' => 'Contact'
+                            );
+                            
+                            $current_page = basename($_SERVER['PHP_SELF']);
+                            
+                            foreach($pages as $url => $title) {
+                                $active = ($url == $current_page) ? 'active' : '';
+                                echo "<li class='nav-item $active'>";
+                                echo "<a class='nav-link' style='color: #fff; font-size: 16px;' href='$url'>$title</a>";
+                                echo "</li>";
+                            }
+                            ?>
+                        </ul>
                     </div>
-                  </li>
-                  <li>
-                    <div class="info-box">
-                      <div class="info-box-content">
-                          <p class="info-box-title">Email Us</p>
-                          <p class="info-box-subtitle">moyobhekinkosi@yahoo.com</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="header-get-a-quote">
-                    <a class="btn btn-primary" href="contact.php">Get A Quote</a>
-                  </li>
-                </ul><!-- Ul end -->
-            </div><!-- header right end -->
-          </div><!-- logo area end -->
-  
-      </div><!-- Row end -->
-    </div><!-- Container end -->
-  </div>
-
-  <div class="site-navigation">
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-              <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div id="navbar-collapse" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav mr-auto">
-                        <?php
-                        $pages = array(
-                            'index.php' => 'Home',
-                            'about.php' => 'About US',
-                            'services.php' => 'Services', 
-                            'projects.php' => 'Projects',
-                            'contact.php' => 'Contact'
-                        );
-                        
-                        $current_page = basename($_SERVER['PHP_SELF']);
-                        
-                        foreach($pages as $url => $title) {
-                            $active = ($url == $current_page) ? 'active' : '';
-                            echo "<li class='nav-item $active'>";
-                            echo "<a class='nav-link' href='$url'>$title</a>";
-                            echo "</li>";
-                        }
-                        ?>
-                    </ul>
-                </div>
-              </nav>
-          </div>
-          <!--/ Col end -->
+                  </nav>
+              </div>
+              <!--/ Col end -->
+            </div>
+            <!--/ Row end -->
+            <div class="nav-search">
+              <span id="search"><i class="fa fa-search" style="color: #fff;"></i></span>
+            </div><!-- Search end -->
+            <div class="search-block" style="display: none;">
+              <label for="search-field" class="w-100 mb-0">
+                <input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter" style="border-color: #FFB600; font-size: 14px;">
+              </label>
+              <span class="search-close" style="color: #FFB600;">&times;</span>
+            </div><!-- Site search end -->
         </div>
-        <!--/ Row end -->
-
-        <div class="nav-search">
-          <span id="search"><i class="fa fa-search"></i></span>
-        </div><!-- Search end -->
-
-        <div class="search-block" style="display: none;">
-          <label for="search-field" class="w-100 mb-0">
-            <input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter">
-          </label>
-          <span class="search-close">&times;</span>
-        </div><!-- Site search end -->
-    </div>
-    <!--/ Container end -->
-
-  </div>
-  <!--/ Navigation end -->
-</header>
+        <!--/ Container end -->
+      </div>
+      <!--/ Navigation end -->
+    </header>
 <!--/ Header end -->
 
 <div id="banner-area" class="banner-area" style="background-image:url(images/banner/banner1.jpg)">
@@ -260,7 +221,7 @@
             <div class="row">
               <div class="col-md-3 col-sm-6 ts-facts">
                   <div class="ts-facts-img">
-                    <i class="fas fa-project-diagram" style="color: #FFB600; font-size: 48px;"></i>
+                    <i class="fas fa-project-diagram" style="color: red; font-size: 48px;"></i>
                   </div>
                   <div class="ts-facts-content">
                     <h2 class="ts-facts-num"><span class="counterUp" data-count="50">0</span></h2>
@@ -270,7 +231,7 @@
 
               <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
                   <div class="ts-facts-img">
-                    <i class="fas fa-users" style="color: #FFB600; font-size: 48px;"></i>
+                    <i class="fas fa-users" style="color: #0d6efd; font-size: 48px;"></i>
                   </div>
                   <div class="ts-facts-content">
                     <h2 class="ts-facts-num"><span class="counterUp" data-count="15">0</span></h2>
@@ -280,7 +241,7 @@
 
               <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
                   <div class="ts-facts-img">
-                    <i class="fas fa-clock" style="color: #FFB600; font-size: 48px;"></i>
+                    <i class="fas fa-clock" style="color: red; font-size: 48px;"></i>
                   </div>
                   <div class="ts-facts-content">
                     <h2 class="ts-facts-num"><span class="counterUp" data-count="1500">0</span></h2>
@@ -290,7 +251,7 @@
 
               <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
                   <div class="ts-facts-img">
-                    <i class="fas fa-award" style="color: #FFB600; font-size: 48px;"></i>
+                    <i class="fas fa-award" style="color: #0d6efd; font-size: 48px;"></i>
                   </div>
                   <div class="ts-facts-content">
                     <h2 class="ts-facts-num"><span class="counterUp" data-count="5">0</span></h2>
