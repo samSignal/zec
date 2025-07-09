@@ -37,12 +37,12 @@
 </head>
 <body>
   <div class="body-inner">
-    <div id="top-bar" class="top-bar">
+    <div id="top-bar" class="top-bar" style="background-color: #1A202C; color: #fff;">
         <div class="container">
           <div class="row">
               <div class="col-lg-8 col-md-8">
                 <ul class="top-info text-center text-md-left">
-                    <li><i class="fas fa-map-marker-alt"></i> <p class="info-text">2/46 Khongo Block, Mpopoma, Bulawayo</p>
+                    <li><i class="fas fa-map-marker-alt" style="color: #ff0000;"></i> <p class="info-text" style="color: #fff;">2/46 Khongo Block, Mpopoma, Bulawayo</p>
                     </li>
                 </ul>
               </div>
@@ -51,13 +51,13 @@
               <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
                 <ul class="list-unstyled">
                     <li>
-                      <a title="Facebook" href="#">
+                      <a title="Facebook" href="#" style="color: #3b5998;">
                           <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
                       </a>
-                      <a title="Twitter" href="#">
+                      <a title="Twitter" href="#" style="color: #1DA1F2;">
                           <span class="social-icon"><i class="fab fa-twitter"></i></span>
                       </a>
-                      <a title="Instagram" href="#">
+                      <a title="Instagram" href="#" style="color: #e1306c;">
                           <span class="social-icon"><i class="fab fa-instagram"></i></span>
                       </a>
                     </li>
@@ -71,52 +71,17 @@
     </div>
     <!--/ Topbar end -->
     <!-- Header start -->
-    <header id="header" class="header-one">
-      <div class="bg-white">
-        <div class="container">
-          <div class="logo-area">
-              <div class="row align-items-center">
-                <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
-                    <a class="d-block" href="index.php">
-                      <img src="images/logo.png?v=1" alt="Mabecarestore" style="vertical-align: middle; height: 40px;">
-                      <span style="color: #000; vertical-align: middle; font-size: 15px; line-height: 40px; display: inline-block;">
-                        <span style="color: #000;"> Mabecarestore </span><span style="color: #FFB600;"> Construction</span>
-                      </span>
-                    </a>
-                </div><!-- logo end -->
+    <header id="header" class="header-one" style="background-color: #FF5733;">
       
-                <div class="col-lg-9 header-right">
-                    <ul class="top-info-box">
-                      <li>
-                        <div class="info-box">
-                          <div class="info-box-content">
-                              <p class="info-box-title">Call Us</p>
-                              <p class="info-box-subtitle">+263 782 612 644</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="info-box">
-                          <div class="info-box-content">
-                              <p class="info-box-title">Email Us</p>
-                              <p class="info-box-subtitle">moyobhekinkosi@yahoo.com</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="header-get-a-quote">
-                        <a class="btn btn-primary" href="contact.php">Get A Quote</a>
-                      </li>
-                    </ul><!-- Ul end -->
-                </div><!-- header right end -->
-              </div><!-- logo area end -->
-      
-          </div><!-- Row end -->
-        </div><!-- Container end -->
-      </div>
-      <div class="site-navigation">
+      <div class="site-navigation" style="background-color: #222;">
         <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
+            <div class="row align-items-center">
+              <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                <a class="d-block" href="index.php">
+                  <img src="images/logo.png?v=1" alt="Mabecarestore" style="vertical-align: middle; height: 50px;">
+                </a>
+              </div><!-- logo end -->
+              <div class="col-lg-9">
                   <nav class="navbar navbar-expand-lg navbar-dark p-0">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -138,7 +103,7 @@
                             foreach($pages as $url => $title) {
                                 $active = ($url == $current_page) ? 'active' : '';
                                 echo "<li class='nav-item $active'>";
-                                echo "<a class='nav-link' href='$url'>$title</a>";
+                                echo "<a class='nav-link' style='color: #fff; font-size: 16px;' href='$url'>$title</a>";
                                 echo "</li>";
                             }
                             ?>
@@ -150,13 +115,13 @@
             </div>
             <!--/ Row end -->
             <div class="nav-search">
-              <span id="search"><i class="fa fa-search"></i></span>
+              <span id="search"><i class="fa fa-search" style="color: #fff;"></i></span>
             </div><!-- Search end -->
             <div class="search-block" style="display: none;">
               <label for="search-field" class="w-100 mb-0">
-                <input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter">
+                <input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter" style="border-color: #FFB600; font-size: 14px;">
               </label>
-              <span class="search-close">&times;</span>
+              <span class="search-close" style="color: #FFB600;">&times;</span>
             </div><!-- Site search end -->
         </div>
         <!--/ Container end -->
@@ -170,6 +135,10 @@
             <div class="container h-100">
               <div class="row align-items-center h-100">
                   <div class="col-md-12 text-center">
+                    <h1 class="slide-title" style="font-size: 48px; font-weight: bold; color: #FFB600; text-shadow: 0 0 20px #fff;" data-animation-in="slideInDown">
+                        <span style="color: #007bff;">Mabecarestore</span>
+                        <span style="color: #dc3545;"> Construction</span>
+                    </h1>
                     <h2 class="slide-title" data-animation-in="slideInLeft">Building Dreams</h2>
                     <h3 class="slide-sub-title" data-animation-in="slideInRight">One Home at a Time</h3>
                     <p data-animation-in="slideInLeft" data-duration-in="1.2">
@@ -181,11 +150,15 @@
             </div>
         </div>
       </div>
-      <div class="banner-carousel-item" style="background-image:url(images/slider-main/bg2.png?v=1)">
+      <div class="banner-carousel-item" style="background-image:url(images/slider-main/bg22.png?v=1)">
         <div class="slider-content text-left">
             <div class="container h-100">
               <div class="row align-items-center h-100">
                   <div class="col-md-12">
+                    <h1 class="slide-title" style="font-size: 48px; font-weight: bold; color: #000; text-shadow: 0 0 20px #fff;" data-animation-in="slideInDown">
+                        <span style="color: #007bff;">Mabecarestore</span>
+                        <span style="color: #dc3545;"> Construction</span>
+                    </h1>
                     <h2 class="slide-title-box" data-animation-in="slideInDown">Trust & Safety</h2>
                     <h3 class="slide-title" data-animation-in="fadeIn">Quality Solutions</h3>
                     <h3 class="slide-sub-title" data-animation-in="slideInLeft">For Your Home</h3>
@@ -197,11 +170,15 @@
             </div>
         </div>
       </div>
-      <div class="banner-carousel-item" style="background-image:url(images/slider-main/bg3.jpg?v=1)">
+      <div class="banner-carousel-item" style="background-image:url(images/slider-main/bg33.jpg?v=1)">
         <div class="slider-content text-right">
             <div class="container h-100">
               <div class="row align-items-center h-100">
                   <div class="col-md-12">
+                    <h1 class="slide-title" style="font-size: 48px; font-weight: bold; text-shadow: 0 0 20px #fff;" data-animation-in="slideInDown">
+                        <span style="color: #007bff;">Mabecarestore</span>
+                        <span style="color: #dc3545;"> Construction</span>
+                    </h1>
                     <h2 class="slide-title" data-animation-in="slideInDown">Expert Construction Team</h2>
                     <h3 class="slide-sub-title" data-animation-in="fadeIn">Building Your Future</h3>
                     <p class="slider-description lead" data-animation-in="slideInRight">We don't just build structures — we build trust, safety, and lasting value.</p>
@@ -398,7 +375,7 @@
             <div class="row">
               <div class="col-md-3 col-sm-6 ts-facts">
                   <div class="ts-facts-img">
-                    <i class="fas fa-project-diagram" style="color: #FFB600; font-size: 48px;"></i>
+                    <i class="fas fa-project-diagram" style="color: #0d6efd; font-size: 48px;"></i>
                   </div>
                   <div class="ts-facts-content">
                     <h2 class="ts-facts-num"><span class="counterUp" data-count="150">0</span></h2>
@@ -408,7 +385,7 @@
 
               <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
                   <div class="ts-facts-img">
-                    <i class="fas fa-users" style="color: #FFB600; font-size: 48px;"></i>
+                    <i class="fas fa-users" style="color: red; font-size: 48px;"></i>
                   </div>
                   <div class="ts-facts-content">
                     <h2 class="ts-facts-num"><span class="counterUp" data-count="20">0</span></h2>
@@ -418,7 +395,7 @@
 
               <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
                   <div class="ts-facts-img">
-                    <i class="fas fa-clock" style="color: #FFB600; font-size: 48px;"></i>
+                    <i class="fas fa-clock" style="color: #0d6efd; font-size: 48px;"></i>
                   </div>
                   <div class="ts-facts-content">
                     <h2 class="ts-facts-num"><span class="counterUp" data-count="2000">0</span></h2>
@@ -428,7 +405,7 @@
 
               <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
                   <div class="ts-facts-img">
-                    <i class="fas fa-award" style="color: #FFB600; font-size: 48px;"></i>
+                    <i class="fas fa-award" style="color: red; font-size: 48px;"></i>
                   </div>
                   <div class="ts-facts-content">
                     <h2 class="ts-facts-num"><span class="counterUp" data-count="<?php echo date('Y') - 2019; ?>">0</span></h2>
@@ -635,9 +612,9 @@
         <div class="row align-items-center">
           <div class="col-md-12">
             <div class="copyright-info text-center">
-              <span>Copyright &copy; <script>
+              <span style="color: #fff;">Copyright &copy; <script>
                   document.write(new Date().getFullYear())
-                  </script> Mabecarestore Construction. All rights reserved. Made by <a href="https://swiftmatrix.co.zw" target="_blank">Swift Matrix Technologies</a></span>
+                  </script> Mabecarestore Construction. All rights reserved. Made by <a href="https://swiftmatrix.co.zw" target="_blank" style="color: #fff;">Swift Matrix Technologies</a></span>
             </div>
           </div>
 

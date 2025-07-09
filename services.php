@@ -43,12 +43,12 @@
 <body>
   <div class="body-inner">
 
-    <div id="top-bar" class="top-bar">
+    <div id="top-bar" class="top-bar" style="background-color: #1A202C; color: #fff;">
         <div class="container">
           <div class="row">
               <div class="col-lg-8 col-md-8">
                 <ul class="top-info text-center text-md-left">
-                    <li><i class="fas fa-map-marker-alt"></i> <p class="info-text">2/46 Khongo Block, Mpopoma, Bulawayo</p>
+                    <li><i class="fas fa-map-marker-alt" style="color: #ff0000;"></i> <p class="info-text" style="color: #fff;">2/46 Khongo Block, Mpopoma, Bulawayo</p>
                     </li>
                 </ul>
               </div>
@@ -57,13 +57,13 @@
               <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
                 <ul class="list-unstyled">
                     <li>
-                      <a title="Facebook" href="#">
+                      <a title="Facebook" href="#" style="color: #3b5998;">
                           <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
                       </a>
-                      <a title="Twitter" href="#">
+                      <a title="Twitter" href="#" style="color: #1DA1F2;">
                           <span class="social-icon"><i class="fab fa-twitter"></i></span>
                       </a>
-                      <a title="Instagram" href="#">
+                      <a title="Instagram" href="#" style="color: #e1306c;">
                           <span class="social-icon"><i class="fab fa-instagram"></i></span>
                       </a>
                     </li>
@@ -78,47 +78,7 @@
     <!--/ Topbar end -->
 <!-- Header start -->
 <header id="header" class="header-one">
-  <div class="bg-white">
-    <div class="container">
-      <div class="logo-area">
-          <div class="row align-items-center">
-            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
-              <a class="d-block" href="index.php">
-                <img src="images/logo.png?v=1" alt="Mabecarestore" style="vertical-align: middle; height: 40px;">
-                <span style="color: #000; vertical-align: middle; font-size: 15px; line-height: 40px; display: inline-block;">
-                  <span style="color: #000;"> Mabecarestore </span><span style="color: #FFB600;"> Construction</span>
-                </span>
-              </a>
-            </div><!-- logo end -->
   
-            <div class="col-lg-9 header-right">
-                <ul class="top-info-box">
-                  <li>
-                    <div class="info-box">
-                      <div class="info-box-content">
-                          <p class="info-box-title">Call Us</p>
-                          <p class="info-box-subtitle">+263 782 612 644</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="info-box">
-                      <div class="info-box-content">
-                          <p class="info-box-title">Email Us</p>
-                          <p class="info-box-subtitle">moyobhekinkosi@yahoo.com</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="header-get-a-quote">
-                    <a class="btn btn-primary" href="contact.php">Get A Quote</a>
-                  </li>
-                </ul><!-- Ul end -->
-            </div><!-- header right end -->
-          </div><!-- logo area end -->
-  
-      </div><!-- Row end -->
-    </div><!-- Container end -->
-  </div>
 
   <div class="site-navigation">
     <div class="container">
